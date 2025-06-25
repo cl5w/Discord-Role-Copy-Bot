@@ -1,46 +1,55 @@
-# Rol Kopyalama Botu
+# 🚀 Rol Kopyalama Botu
 
-Belirli bir rol aralığını bir Discord sunucusundan başka bir sunucuya **yönetici yetkisiyle** kopyalamak için tasarlanmış basit bir bot.
+Belirli bir rol aralığını bir Discord sunucusundan başka bir sunucuya **yönetici yetkisiyle** kopyalamak için tasarlanmış sade ve etkili bir bot.
 
 ---
 
 ## ⚙️ Kurulum
 
-1. Repoyu klonla:
-   ```bash
-   git clone https://github.com/cl5w/kopyalama-bot.git
-   cd kopyalama-bot
+### 🔁 1. Repoyu Klonla
+```bash
+git clone https://github.com/cl5w/kopyalama-bot.git
+cd kopyalama-bot
+```
 
-
-2. Gerekli Paketleri kur:
-
+### 📦 2. Gerekli Paketleri Kur
+```bash
 npm install
+```
 
+### 🧾 3. `config.json` Dosyasını Oluştur
+Proje dizinine `config.json` adında bir dosya aç ve aşağıdaki gibi düzenle:
 
-3. config.json dosyası oluştur ve aşağıdaki gibi düzenle:
-
+```json
 {
   "token": "bot_tokenin_buraya",
   "clientId": "uygulama_id",
   "sourceGuildId": "kaynak_sunucu_id",
   "targetGuildId": "hedef_sunucu_id"
 }
+```
 
+> ⚠️ Bu dosya `.gitignore` içinde olduğundan GitHub'a yüklenmez.
 
-4. Komutları deploy et:
+---
 
-npm run deploy
+## 🛠️ Komutlar
 
+### `/rolleri-kopyala`
+Belirttiğin iki rol adı (örn: `a` ile `f`) arasındaki tüm rolleri **yetkisiz** şekilde hedef sunucuya kopyalar.
 
-5. node index.js
+> 🔐 Bu komut yalnızca **Yönetici** yetkisine sahip kişiler tarafından kullanılabilir.
 
+---
 
-- Slash Komutu
-/rolleri-kopyala → Belirli adlar arası roller hedef sunucuya kopyalanır.
+## 📝 Notlar
 
-- Yetki
-Bu komut sadece yönetici yetkisine sahip kullanıcılar tarafından kullanılabilir.
+- **config.json** içeriğinde token gibi gizli bilgiler bulunduğu için **GitHub'a dahil edilmez**.
+- Bot, yalnızca belirtilen rol isimleri aralığını dikkate alır.
 
-- Notlar
-config.json dosyası .gitignore içinde olduğu için GitHub'a yüklenmez.
+---
 
+## 🧑‍💻 Geliştirici
+
+**cl5w**  
+GitHub: [github.com/cl5w](https://github.com/cl5w)
