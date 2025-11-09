@@ -1,55 +1,55 @@
-# 🚀 Rol Kopyalama Botu
+# 🚀 Role Copy Bot
 
-Belirli bir rol aralığını bir Discord sunucusundan başka bir sunucuya **yönetici yetkisiyle** kopyalamak için tasarlanmış sade ve etkili bir bot.
+A simple and efficient bot designed to copy a specific range of roles from one Discord server to another using administrator privileges.
 
 ---
 
-## ⚙️ Kurulum
+## ⚙️ Setup
 
-### 🔁 1. Repoyu Klonla
+### 🔁 1. Clone the Repository
 ```bash
-git clone https://github.com/cl5w/kopyalama-bot.git
-cd kopyalama-bot
+git clone https://github.com/cl5w/Discord-Role-Copy-Bot.git
+cd Discord-Role-Copy-Bot
 ```
 
-### 📦 2. Gerekli Paketleri Kur
+### 📦 2. Install Dependencies
 ```bash
 npm install
 ```
 
-### 🧾 3. `config.json` Dosyasını Oluştur
-Proje dizinine `config.json` adında bir dosya aç ve aşağıdaki gibi düzenle:
+### 🧾 3. Create the config.json File
+Create a file named `config.json` in the project
 
 ```json
 {
-  "token": "bot_tokenin_buraya",
-  "clientId": "uygulama_id",
-  "sourceGuildId": "kaynak_sunucu_id",
-  "targetGuildId": "hedef_sunucu_id"
+  "token": "your_bot_token_here",
+  "clientId": "application_id",
+  "sourceGuildId": "source_server_id",
+  "targetGuildId": "target_server_id"
 }
 ```
 
-> ⚠️ Bu dosya `.gitignore` içinde olduğundan GitHub'a yüklenmez.
+> ⚠️ This file is listed in `.gitignore` so it will not be uploaded to GitHub.
 
 ---
 
-## 🛠️ Komutlar
+## 🛠️ Commands
 
 ### `/rolleri-kopyala`
-Belirttiğin iki rol adı (örn: `a` ile `f`) arasındaki tüm rolleri **yetkisiz** şekilde hedef sunucuya kopyalar.
+Copies all roles between two specified role names (e.g., from a to f) to the target server without any
 
-> 🔐 Bu komut yalnızca **Yönetici** yetkisine sahip kişiler tarafından kullanılabilir.
-
----
-
-## 📝 Notlar
-
-- **config.json** içeriğinde token gibi gizli bilgiler bulunduğu için **GitHub'a dahil edilmez**.
-- Bot, yalnızca belirtilen rol isimleri aralığını dikkate alır.
+> 🔐 Only members with Administrator privileges can use this command.
 
 ---
 
-## 🧑‍💻 Geliştirici
+## 📝 Notes
+
+- The config.json file contains sensitive information (like your bot token), so never upload it publicly.
+- The bot only processes roles within the specified name range.
+
+---
+
+## 🧑‍💻 Developer
 
 **cl5w**  
 GitHub: [github.com/cl5w](https://github.com/cl5w)
